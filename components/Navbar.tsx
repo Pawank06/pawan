@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
     const changeBackground = () => {
-        if (window.scrollY >= 90) {
+        if (window.scrollY >= 80) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
 
-        <div className={navbar ? 'text-rose-100/100 lg:text-lg md:text-lg text-sm font-bold my-5 nav-bar active flex items-center rounded-xl justify-between px-4 py-5 max-w-3xl w-full md:max-w-2xl lg:max-w-3xl lg:w-full md:w-full ' : 'mb-14 lg:text-lg md:text-lg gap-10 font-semibold'}>
+        <div className={navbar ? 'text-rose-100/100 lg:text-lg  md:text-lg text-sm font-bold my-5 nav-bar active flex items-center rounded-xl justify-between px-4 py-5 max-w-3xl w-full md:max-w-2xl lg:max-w-3xl lg:w-full md:w-full ' : 'mb-14 lg:text-lg md:text-lg gap-10 font-semibold'}>
             {
                 navbar ? <div>
                 <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </div> : ''
             }
             
-            <div className='grid grid-flow-col gap-4'>
+            <div className={navbar ?'grid grid-flow-col gap-10': 'flex gap-16'}>
                 <div className=''>
                     <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
                         Home

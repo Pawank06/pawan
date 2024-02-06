@@ -83,7 +83,7 @@ body {
   top: 0;
   left: 50%; /* Center the navbar horizontally */
   transform: translateX(-50%); /* Adjust for centering */
-  z-index: 9999;
+  z-index: 30;
   background: rgba(37, 36, 36, 0.8); /* Darkened background color */
   border: 1px solid rgba(122, 116, 116, 0.363);
   box-shadow: -2px -1px 11px 0px rgba(255, 255, 255, 0.24) inset;
@@ -95,7 +95,7 @@ body {
 }
 
 .nav-bar.active {
-  max-height: 100px; /* Adjust the max-height for the desired drop-down height */
+  max-height: 200px; /* Adjust the max-height for the desired drop-down height */
 }
 
 .nav-bar::before {
