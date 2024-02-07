@@ -79,21 +79,23 @@ body {
 }
 
 .nav-bar.active {
-  position: fixed;
-  top: 0;
-  left: 50%; /* Center the navbar horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  z-index: 30;
-  background: rgba(37, 36, 36, 0.8); /* Darkened background color */
-  border: 1px solid rgba(122, 116, 116, 0.363);
-  box-shadow: -2px -1px 11px 0px rgba(255, 255, 255, 0.24) inset;
-  backdrop-filter: blur(1px);
+  .nav-bar.active {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 30;
+    background: rgba(37, 36, 36, 0.8); /* Darkened background color */
+    border: 1px solid rgba(122, 116, 116, 0.363);
+    box-shadow: -2px -1px 11px 0px rgba(255, 255, 255, 0.24) inset;
+    backdrop-filter: blur(1px);
+    
+    overflow: hidden; /* Hide overflow to prevent noise from extending beyond navbar */
+    max-height: 0; /* Initially hidden */
+    transition: max-height 0.3s ease; /* Smooth transition for max-height */
+    max-height: 200px;
+  }
   
-  overflow: hidden; /* Hide overflow to prevent noise from extending beyond navbar */
-  max-height: 0; /* Initially hidden */
-  transition: all 0.2s ; /* Smooth transition */
-  max-height: 200px;
-}
 
 
 .nav-bar::before {
