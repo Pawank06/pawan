@@ -78,7 +78,7 @@ body {
   pointer-events: none; /* Make sure the noise doesn't affect interactivity */
 }
 
-.nav-bar.active {
+
   .nav-bar.active {
     position: fixed;
     top: 0;
