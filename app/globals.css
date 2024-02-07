@@ -85,8 +85,8 @@ body {
   left: 50%; /* Center the navbar horizontally */
   transform: translateX(-50%); /* Adjust for centering */
   z-index: 30;
-  background: rgba(37, 36, 36, 0.8); /* Darkened background color */
-  border: 1px solid rgba(122, 116, 116, 0.363);
+  background: rgba(3, 3, 3, 0.021); /* Darkened background color */
+  border: 1px solid rgba(122, 116, 116, 0.685);
   box-shadow: -2px -1px 11px 0px rgba(255, 255, 255, 0.164) ;
   backdrop-filter: blur(1px);
   max-height: 200px; /* Set a fixed maximum height */

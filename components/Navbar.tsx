@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -24,31 +25,36 @@ const Navbar = () => {
 
     return (
 
-        <div className='text-rose-100/100 lg:text-lg  md:text-lg text-sm gap-5 lg:font-bold md:font-bold font-semibold my-5 nav-bar active flex items-center w-full max-w-[320px] md:max-w-2xl lg:max-w-3xl rounded-xl justify-between px-4 py-5'>
+        <div className='text-rose-100/100 lg:text-lg  md:text-lg text-sm gap-5 lg:font-bold md:font-bold font-semibold my-5 nav-bar active flex items-center w-full max-w-[320px] md:max-w-2xl lg:max-w-3xl rounded-xl justify-between px-4 py-3'>
             <div>
-                <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
-                    Logo
+                <Link href="/">
+                    <Image
+                        src={"/images/logo.png"}
+                        width={40}
+                        height={40}
+                        alt='profile image'
+                    />
                 </Link>
             </div>
 
             <div className='flex gap-3 lg:gap-7 md:gap-6'>
                 <div className=''>
-                    <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
+                    <Link href="/" className='opacity-90 hover:text-rose-100/90 hover:opacity-70'>
                         Home
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
+                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
                         projects
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
+                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
                         Blogs
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
+                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
                         Twitter
                     </Link>
                 </div>
