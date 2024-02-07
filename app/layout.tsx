@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <main className="max-w-3xl md:max-w-2xl lg:max-w-3xl mx-auto px-5 lg:px-0 md:px-0 pt-[12rem]">
+        <main className="max-w-[360px] md:max-w-2xl lg:max-w-3xl mx-auto pt-[12rem]">
           <Navbar/>
           {children}
           <Footer/>

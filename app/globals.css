@@ -91,12 +91,10 @@ body {
   
   overflow: hidden; /* Hide overflow to prevent noise from extending beyond navbar */
   max-height: 0; /* Initially hidden */
-  transition: max-height 0.25s ease-in-out; /* Smooth transition */
+  transition: all 0.25s ; /* Smooth transition */
+  max-height: 200px;
 }
 
-.nav-bar.active {
-  max-height: 200px; /* Adjust the max-height for the desired drop-down height */
-}
 
 .nav-bar::before {
   content: "";
