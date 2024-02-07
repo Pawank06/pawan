@@ -21,12 +21,12 @@ export default function Home() {
           <h2 className="align-middle text-lg leading-6 text-rose-100/50">Fullstack developer</h2>
         </div>
       </div>
-      <p className="mt-7 mb-[7rem] text-xl text-rose-100/90 sm:mt-9">
+      <p className="mt-7 mb-[4rem] text-base lg:text-xl text-rose-100/90 sm:mt-8">
         Hello everyone! I'm a self-taught full-stack developer. Here I document my journey by sharing what I learn along with useful tips and insights. Join me as we learn and grow together!
 
       </p>
       <div>
-      <h1 className="mt-16 text-rose-100/80 font-medium text-2xl">Feature Projects</h1>
+      <h1 className="mt-16 text-rose-100/80 font-semibold text-xl">Feature Projects</h1>
       <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-6 tech">
         <ProjectCard/>
         <ProjectCard/>
@@ -35,7 +35,7 @@ export default function Home() {
       
      </div>
       <div>
-        <h1 className="mt-16 text-rose-100/80 font-medium text-2xl">Feature blogs</h1>
+        <h1 className="mt-16 text-rose-100/80 font-semibold text-xl">Feature blogs</h1>
         <Card />
         <Card />
         <Card />

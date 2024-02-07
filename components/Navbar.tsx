@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
     const changeBackground = () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 240) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
 
-        <div className={navbar ? 'text-rose-100/100 lg:text-lg  md:text-lg text-sm gap-5 font-bold my-5 nav-bar active flex items-center w-full max-w-[320px] md:max-w-2xl lg:max-w-3xl rounded-xl justify-between px-4 py-5' : 'w-fulltext-md mb-14 lg:text-lg md:text-lg font-semibold'}>
+        <div className={navbar ? 'text-rose-100/100 lg:text-lg  md:text-lg text-sm gap-5 font-bold my-5 nav-bar active flex items-center w-full max-w-[320px] md:max-w-2xl lg:max-w-3xl rounded-xl justify-between px-4 py-5' : 'w-full text-md mb-14 lg:text-lg md:text-lg font-semibold'}>
             {
                 navbar ? <div>
                 <Link href="/" className='hover:text-rose-100/90 opacity-70 hover:underline'>
