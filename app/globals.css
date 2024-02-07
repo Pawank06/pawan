@@ -78,7 +78,7 @@ body {
   pointer-events: none; /* Make sure the noise doesn't affect interactivity */
 }
 
-.nav-bar {
+.nav-bar.active {
   position: fixed;
   top: 0;
   left: 50%; /* Center the navbar horizontally */
@@ -91,7 +91,7 @@ body {
   
   overflow: hidden; /* Hide overflow to prevent noise from extending beyond navbar */
   max-height: 0; /* Initially hidden */
-  transition: all 0.25s ; /* Smooth transition */
+  transition: all 0.2s ; /* Smooth transition */
   max-height: 200px;
 }
 
