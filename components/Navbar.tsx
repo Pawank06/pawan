@@ -44,17 +44,17 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
-                        projects
+                    <Link href="/projects" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
+                        Projects
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
+                    <Link href="/blogs" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
                         Blogs
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
+                    <Link href="https://twitter.com/heypawanz" target='_blank' className='opacity-90  hover:text-rose-100/90 hover:opacity-70'>
                         Twitter
                     </Link>
                 </div>

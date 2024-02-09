@@ -26,20 +26,23 @@ export default function Home() {
 
       </p>
       <div>
-      <h1 className="mt-16 text-rose-100/80 font-semibold text-xl">Feature Projects</h1>
-      <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-6 tech">
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
+        <h1 className="mt-16 text-rose-100/80 font-semibold text-xl">Feature Projects</h1>
+        <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-6 tech">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+
       </div>
-      
-     </div>
       <div>
         <h1 className="mt-16 text-rose-100/80 font-semibold text-xl">Feature blogs</h1>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <div className="mt-10 grid gap-6 tech">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+
       </div>
 
 
